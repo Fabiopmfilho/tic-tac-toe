@@ -3,6 +3,11 @@
   margin: 0 auto;
 }
 
+.board-container h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+
 .board {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -24,4 +29,27 @@
   content: '';
   display: block;
   padding-bottom: 100%;
+}
+
+.reset {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.reset button, .history {
+  background-color: rgb(33, 25, 189);
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.winner-name {
+  font-size: 5vw;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 20px;
 }
