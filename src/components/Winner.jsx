@@ -5,7 +5,7 @@ import { GameContext } from "../contexts/GameContext";
 const Winner = () => {
   const { whoIsWinner } = useContext(GameContext);
   
-  if (!whoIsWinner) return <></>;
+  if (!whoIsWinner) return <div></div>;
   return <p className="winner-name">{ whoIsWinner } win!!!</p>;
 };
 
