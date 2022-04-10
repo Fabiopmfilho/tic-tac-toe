@@ -1,10 +1,12 @@
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 
-import { GameContext } from '../contexts/GameContext';
+import { GameContext } from "../contexts/GameContext";
 
-const Board = () => {
-  const context = useContext(GameContext);
-  return <h1>Board</h1>;
+const Winner = () => {
+  const { whoIsWinner } = useContext(GameContext);
+  
+  if (!whoIsWinner) return <></>;
+  return <p className="winner-name">{ whoIsWinner } win!!!</p>;
 };
 
-export default Board;
+export default Winner;
